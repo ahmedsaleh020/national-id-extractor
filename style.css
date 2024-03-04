@@ -4,39 +4,86 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #000000;
+  background-color: #1B1A17;
+  *{
+    font-family: "Tajawal", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
 }
 
-.main {
+section.banner{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 10px;
+  width: 100%;
+  padding: 0 10px;
+  margin:8px 0px;
+  text-align: center;
+  color:#fff
+}
+
+h1{
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffc30d;
+}
+h2{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+section.entry {
+  max-width: 764px;
   height: 200px;
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   row-gap: 10px;
   margin: auto;
 }
 
 input {
+  width: 100%;
+  max-width: 400px;
+  height: 45px;
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
   outline: none;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px rgb(0, 0, 0) solid;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
 button {
-  padding: 10px 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 45px;
   cursor: pointer;
-  background-color: yellow;
+  background-color: #ffc30d;
   color: rgb(0, 0, 0);
   outline: none;
   border: none;
-  border-radius: 15px;
-  font-size: 25px;
+  border-radius: 8px;
+  font-size: 22px;
+  transition: .16s all linear;
 }
-
-.data {
+button:hover, button:focus{
+  background-color: #ffe57c;
+  
+}
+section.data {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -47,14 +94,13 @@ button {
   margin: 0 auto;
   font-size: 30px;
 }
-.show {
+section.data.show {
   display: flex;
 }
 p {
   display: flex;
   padding: 0 0 5px 0;
   color: white;
-  border-bottom: 1px solid rgba(5, 3, 3, 0.664);
 }
 
 @media (max-width: 760px) {
@@ -65,5 +111,14 @@ p {
   }
   .small-p {
     flex-direction: column;
+  }
+  h1{
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffc30d;
+  }
+  h2{
+    font-size: 22px;
+    font-weight: 700;
   }
 }

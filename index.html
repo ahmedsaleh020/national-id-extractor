@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+    </style>
     <link rel="stylesheet" href="style.css" />
     <title>National ID</title>
   </head>
+
   <body>
-  
-    <div class="main">
-      <input type="number" id="user-input" placeholder="ادخل الرقم القومى" />
-      <button>بحث</button>
-    </div>
-    <div class="data" dir="rtl">
-      <p class="small-p" dir="ltr">
-        <span class="birth-date small-span">10/2/2002</span> :تاريخ الميلاد
-      </p>
-      <p class="small-p">
-        محافظة الميلاد : <span class="birth-town small-span">اسوان</span>
-      </p>
-      <p class="small-p">
-        ترتيبك بين مواليد نفس اليوم :
-        <span class="birth-order small-span">3</span>
-      </p>
-      <p class="small-p">
-        الجنس : <span class="gender small-span"> ذكر </span>
-      </p>
-    </div>
+    <main>
+      <section class="banner">
+        <img src="pharoah.svg" alt="Pharoah">
+        <h1>استخرج بياناتك من رقمك القومي المصري</h1>
+        <h2>الجنس، ومكان الميلاد، وتاريخ الميلاد، وترتيبك  بين مواليد نفس يوم الميلاد</h2>
+        <p>ملحوظة: لا يتم استخدام البيانات ولا ترسل أصلا لأي قاعدة بيانات.. كل ما يتم عرضه يظهر فقط على متصفحك </p>
+      </section>
+      <section class="entry">
+        <input type="number" id="user-input" placeholder="ادخل الرقم القومى" />
+        <button>بحث</button>
+      </section>
+      <section class="data" dir="rtl">
+        <p class="small-p" dir="ltr">
+          <span class="birth-date small-span">10/2/2002</span> :تاريخ الميلاد
+        </p>
+        <p class="small-p">
+          محافظة الميلاد : <span class="birth-town small-span">اسوان</span>
+        </p>
+        <p class="small-p">
+          ترتيبك بين مواليد نفس اليوم :
+          <span class="birth-order small-span">3</span>
+        </p>
+        <p class="small-p">
+          الجنس : <span class="gender small-span"> ذكر </span>
+        </p>
+      </section>
+    </main>
     <script src="./app.js"></script>
   </body>
+
 </html>
